@@ -1,0 +1,14 @@
+# Workflow
+# Should have name
+name: Hello
+# on tells when workflow should run
+on: 
+  workflow_dispatch:
+# Jobs tells what workflow should do, there can be more than one jobs, hence we write jobs 
+# Should be inside workflow
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello to everyone
+        run: echo "Hello Dosto"
